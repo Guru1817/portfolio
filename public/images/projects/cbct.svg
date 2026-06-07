@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1e3d"/>
+      <stop offset="100%" stop-color="#0a0c1c"/>
+    </linearGradient>
+    <linearGradient id="cseat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="cseat2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <radialGradient id="cglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#cbg)"/>
+  <ellipse cx="400" cy="300" rx="320" ry="220" fill="url(#cglow)"/>
+
+  <!-- Grid of seats -->
+  <g opacity="0.95">
+    <!-- Row 1 -->
+    <rect x="160" y="160" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.9"/>
+    <rect x="240" y="160" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="320" y="160" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.85"/>
+    <rect x="400" y="160" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.9"/>
+    <rect x="480" y="160" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="560" y="160" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.85"/>
+
+    <!-- Row 2 -->
+    <rect x="160" y="240" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="240" y="240" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.95"/>
+    <rect x="320" y="240" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.9"/>
+    <rect x="400" y="240" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="480" y="240" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.85"/>
+    <rect x="560" y="240" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.9"/>
+
+    <!-- Row 3 -->
+    <rect x="160" y="320" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.85"/>
+    <rect x="240" y="320" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.95"/>
+    <rect x="320" y="320" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="400" y="320" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.9"/>
+    <rect x="480" y="320" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.85"/>
+    <rect x="560" y="320" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+
+    <!-- Row 4 -->
+    <rect x="160" y="400" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.9"/>
+    <rect x="240" y="400" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="320" y="400" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.85"/>
+    <rect x="400" y="400" width="60" height="60" rx="12" fill="url(#cseat)" opacity="0.95"/>
+    <rect x="480" y="400" width="60" height="60" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)"/>
+    <rect x="560" y="400" width="60" height="60" rx="12" fill="url(#cseat2)" opacity="0.9"/>
+  </g>
+
+  <!-- Allocation flow line -->
+  <g stroke="#22d3ee" stroke-width="2" fill="none" opacity="0.55" stroke-dasharray="4 6">
+    <path d="M80 100 Q 200 200, 400 250" />
+    <path d="M80 500 Q 200 380, 350 380" />
+    <path d="M720 100 Q 600 200, 460 290" />
+  </g>
+
+  <!-- Floating student tokens -->
+  <circle cx="80"  cy="100" r="10" fill="#22d3ee"/>
+  <circle cx="80"  cy="500" r="10" fill="#7c3aed"/>
+  <circle cx="720" cy="100" r="10" fill="#f59e0b"/>
+</svg>

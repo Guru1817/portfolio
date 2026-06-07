@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1330"/>
+      <stop offset="100%" stop-color="#0a0617"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#bg)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Waveform bars -->
+  <rect x="48"  y="78"  width="14" height="44" rx="7" fill="url(#pink)"/>
+  <rect x="74"  y="50"  width="14" height="100" rx="7" fill="url(#amber)"/>
+  <circle cx="100" cy="100" r="6" fill="#fbbf24"/>
+  <rect x="112" y="50"  width="14" height="100" rx="7" fill="url(#amber)"/>
+  <rect x="138" y="78"  width="14" height="44" rx="7" fill="url(#pink)"/>
+</svg>

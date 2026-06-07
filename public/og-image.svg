@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c1c"/>
+      <stop offset="100%" stop-color="#05060f"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="20%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="85%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- Logo mark -->
+  <g transform="translate(80 70)">
+    <rect width="56" height="56" rx="14" fill="#0a0c1c" stroke="rgba(255,255,255,0.08)"/>
+    <text x="28" y="38" text-anchor="middle"
+      font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="url(#grad)">G</text>
+  </g>
+  <text x="160" y="105" font-family="JetBrains Mono, monospace" font-size="16"
+    letter-spacing="4" fill="rgba(255,255,255,0.55)">PORTFOLIO · 2026</text>
+
+  <!-- Big name -->
+  <text x="80" y="320" font-family="Clash Display, Inter, sans-serif"
+    font-size="120" font-weight="700" fill="#ffffff">Gurupada</text>
+  <text x="80" y="450" font-family="Clash Display, Inter, sans-serif"
+    font-size="120" font-weight="700" fill="url(#grad)">Nayak</text>
+
+  <!-- Tagline -->
+  <text x="80" y="520" font-family="JetBrains Mono, monospace" font-size="22"
+    letter-spacing="4" fill="rgba(255,255,255,0.7)">JAVA DEVELOPER · MCA · AI/ML CURIOUS</text>
+
+  <!-- Status pill -->
+  <g transform="translate(80 555)">
+    <rect width="320" height="44" rx="22" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+    <circle cx="22" cy="22" r="5" fill="#22d3ee"/>
+    <text x="40" y="29" font-family="JetBrains Mono, monospace" font-size="14"
+      letter-spacing="2" fill="rgba(255,255,255,0.85)">AVAILABLE FOR OPPORTUNITIES</text>
+  </g>
+
+  <!-- URL on right -->
+  <text x="1120" y="585" text-anchor="end" font-family="JetBrains Mono, monospace"
+    font-size="18" fill="rgba(255,255,255,0.5)">gurupadanayak.com</text>
+</svg>
