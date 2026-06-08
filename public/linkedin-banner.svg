@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" fill="none">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c1c"/>
+      <stop offset="50%" stop-color="#0f1230"/>
+      <stop offset="100%" stop-color="#05060f"/>
+    </linearGradient>
+
+    <!-- Aurora glow gradients -->
+    <radialGradient id="auroraCyan" cx="20%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="60%" stop-color="#22d3ee" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraViolet" cx="55%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#7c3aed" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="auroraAmber" cx="85%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Brand gradient for text -->
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M 44 0 L 0 0 0 44" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Base layers -->
+  <rect width="1584" height="396" fill="url(#bg)"/>
+  <rect width="1584" height="396" fill="url(#grid)"/>
+  <rect width="1584" height="396" fill="url(#auroraCyan)"/>
+  <rect width="1584" height="396" fill="url(#auroraViolet)"/>
+  <rect width="1584" height="396" fill="url(#auroraAmber)"/>
+
+  <!-- Decorative orbits, top-right area (won't be hidden by profile photo at left) -->
+  <g opacity="0.35" stroke="rgba(255,255,255,0.18)" fill="none">
+    <circle cx="1320" cy="198" r="120" stroke-width="1"/>
+    <circle cx="1320" cy="198" r="170" stroke-width="1" stroke-dasharray="2 6"/>
+    <circle cx="1320" cy="198" r="80"  stroke-width="1.5"/>
+  </g>
+  <!-- Orbit dots -->
+  <circle cx="1440" cy="198" r="5" fill="#22d3ee"/>
+  <circle cx="1320" cy="28"  r="4" fill="#f59e0b"/>
+  <circle cx="1240" cy="198" r="3" fill="#7c3aed"/>
+
+  <!-- Floating soft orbs for depth -->
+  <circle cx="200"  cy="320" r="140" fill="#22d3ee" opacity="0.06"/>
+  <circle cx="900"  cy="60"  r="110" fill="#7c3aed" opacity="0.05"/>
+  <circle cx="1100" cy="340" r="90"  fill="#f59e0b" opacity="0.05"/>
+
+  <!-- LEFT BLOCK: Logo + label
+       NOTE: LinkedIn covers the bottom-left corner with the profile photo (~150x150 from x≈70 y≈246).
+       So we keep this block left-aligned but OFFSET further right so it's not hidden.  -->
+
+  <!-- Top label, left side, but shifted right enough to clear the avatar overlap -->
+  <g transform="translate(360 60)">
+    <!-- Logo mark -->
+    <rect width="46" height="46" rx="11" fill="#0a0c1c" stroke="rgba(255,255,255,0.08)"/>
+    <text x="23" y="32" text-anchor="middle"
+      font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" font-size="22" fill="url(#brand)">G</text>
+    <!-- Label text -->
+    <text x="62" y="20"
+      font-family="JetBrains Mono, ui-monospace, monospace" font-size="11"
+      letter-spacing="3.6" fill="rgba(255,255,255,0.55)">PORTFOLIO · 2026</text>
+    <text x="62" y="40"
+      font-family="JetBrains Mono, ui-monospace, monospace" font-size="13"
+      fill="rgba(255,255,255,0.92)">gurupadanayak.in</text>
+  </g>
+
+  <!-- BIG NAME, centered horizontally and vertically on the right portion -->
+  <g transform="translate(360 0)">
+    <text x="0" y="220"
+      font-family="Clash Display, Inter, Helvetica, Arial, sans-serif"
+      font-size="86" font-weight="700" letter-spacing="-2" fill="#ffffff">Gurupada Nayak</text>
+
+    <!-- Tagline -->
+    <text x="2" y="270"
+      font-family="JetBrains Mono, ui-monospace, monospace"
+      font-size="18" letter-spacing="3" fill="url(#brand)">JAVA DEVELOPER · MCA · BACKEND &amp; AI/ML</text>
+
+    <!-- Sub line -->
+    <text x="2" y="304"
+      font-family="Inter, Helvetica, Arial, sans-serif"
+      font-size="16" fill="rgba(255,255,255,0.65)">Building secure, scalable backend systems. Curious about AI/ML.</text>
+
+    <!-- Status pill -->
+    <g transform="translate(0 330)">
+      <rect width="280" height="34" rx="17" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+      <circle cx="18" cy="17" r="4" fill="#22d3ee"/>
+      <circle cx="18" cy="17" r="7" fill="#22d3ee" opacity="0.25"/>
+      <text x="34" y="22"
+        font-family="JetBrains Mono, ui-monospace, monospace"
+        font-size="11" letter-spacing="2" fill="rgba(255,255,255,0.85)">AVAILABLE FOR OPPORTUNITIES</text>
+    </g>
+  </g>
+
+  <!-- Tech stack chips, right side, vertically centered -->
+  <g transform="translate(1020 130)" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12">
+    <!-- chip 1 -->
+    <g transform="translate(0 0)">
+      <rect width="86" height="28" rx="14" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.35)"/>
+      <text x="43" y="18" text-anchor="middle" fill="#22d3ee">Java</text>
+    </g>
+    <g transform="translate(96 0)">
+      <rect width="116" height="28" rx="14" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.35)"/>
+      <text x="58" y="18" text-anchor="middle" fill="#a78bfa">Spring Boot</text>
+    </g>
+    <g transform="translate(0 38)">
+      <rect width="110" height="28" rx="14" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.35)"/>
+      <text x="55" y="18" text-anchor="middle" fill="#fbbf24">REST APIs</text>
+    </g>
+    <g transform="translate(120 38)">
+      <rect width="92" height="28" rx="14" fill="rgba(34,211,238,0.08)" stroke="rgba(34,211,238,0.35)"/>
+      <text x="46" y="18" text-anchor="middle" fill="#22d3ee">MySQL</text>
+    </g>
+    <g transform="translate(0 76)">
+      <rect width="100" height="28" rx="14" fill="rgba(124,58,237,0.08)" stroke="rgba(124,58,237,0.35)"/>
+      <text x="50" y="18" text-anchor="middle" fill="#a78bfa">Python</text>
+    </g>
+    <g transform="translate(110 76)">
+      <rect width="102" height="28" rx="14" fill="rgba(245,158,11,0.08)" stroke="rgba(245,158,11,0.35)"/>
+      <text x="51" y="18" text-anchor="middle" fill="#fbbf24">AI / ML</text>
+    </g>
+  </g>
+
+  <!-- Subtle film grain at the very top via dotted line -->
+  <line x1="0" y1="395" x2="1584" y2="395" stroke="url(#brand)" stroke-width="2" opacity="0.6"/>
+</svg>
