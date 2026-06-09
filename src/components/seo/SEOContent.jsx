@@ -21,8 +21,9 @@ export default function SEOContent() {
       }}
       aria-hidden="false"
     >
-      <h1>Gurupada Nayak — Java Developer & MCA Graduate</h1>
-      <h2>Backend Developer based in Odisha, India</h2>
+      <h1>Gurupada Nayak</h1>
+      <p>Java Developer · MCA Graduate · Backend Engineer</p>
+      <h2>About Gurupada Nayak</h2>
       <p>
         Gurupada Nayak is a Java Developer currently pursuing Master of
         Computer Applications (MCA) at Berhampur University, Odisha, India,
