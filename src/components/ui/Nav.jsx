@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { info } from '@/data/info';
 
 const links = [
   { id: 'hero', label: 'Home' },
@@ -92,14 +93,11 @@ export default function Nav() {
         </div>
 
         <a
-          href="#contact"
-          onClick={(e) => {
-            e.preventDefault();
-            handleClick('contact');
-          }}
+          href={info.resume}
+          download
           className="rounded-full border border-white/15 bg-white/5 px-5 py-2 text-sm font-medium backdrop-blur transition hover:border-aurora-cyan/60 hover:bg-aurora-cyan/10"
         >
-          Let's talk
+          Resume ↓
         </a>
       </div>
     </motion.nav>

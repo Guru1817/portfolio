@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Gurupada Nayak
+% Based on: Jake's Resume (https://github.com/jakegut/resume)
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+% --------- Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Tighter margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ATS-friendly PDF
+\pdfgentounicode=1
+
+% --------- Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+% Project heading (left content + right date) using tabularx so long left content
+% wraps onto a second line instead of pushing the date off the page.
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{@{}X@{\extracolsep{\fill}}r@{}}
+      \small#1 & \small#2
+    \end{tabularx}\vspace{-5pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Real bulleted list for Certifications and Achievements
+\newcommand{\resumeBulletListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=-2pt, topsep=2pt]}
+\newcommand{\resumeBulletListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% ----------------------- HEADING -----------------------
+\begin{center}
+    {\Huge \scshape Gurupada Nayak} \\ \vspace{4pt}
+    \small
+    +91 7735287196 $\,|\,$
+    \href{mailto:gurupadanayak@hotmail.com}{\underline{gurupadanayak@hotmail.com}} $\,|\,$
+    \href{https://gurupadanayak.in}{\underline{gurupadanayak.in}} $\,|\,$
+    \href{https://github.com/Guru1817}{\underline{GitHub}} $\,|\,$
+    \href{https://www.linkedin.com/in/gurupada-nayak-71724b25b/}{\underline{LinkedIn}}
+\end{center}
+
+% ----------------------- PROFILE -----------------------
+\section{Profile}
+\small{Java backend developer pursuing MCA at Berhampur University (CGPA 8.6, top 10\%). Designs and ships secure, scalable systems with Spring Boot, REST APIs, and relational databases. Comfortable across the stack with a growing focus on integrating AI/ML into product workflows.}
+
+% ----------------------- EDUCATION -----------------------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Berhampur University}{Berhampur, Odisha}
+      {Master of Computer Applications (MCA) \textbullet\ CGPA: 8.6 \textbullet\ Top 10\% of batch}{2024 -- Present}
+    \resumeSubheading
+      {FM Autonomous College, Balasore}{Odisha, India}
+      {Graduation, General Studies}{2019 -- 2022}
+\resumeSubHeadingListEnd
+
+% ----------------------- TECHNICAL SKILLS -----------------------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Java, Python, SQL, Kotlin, JavaScript} \\
+      \textbf{Backend}{: Spring Boot, Spring Data JPA, REST APIs, JDBC, Hibernate, JWT Authentication} \\
+      \textbf{Databases}{: MySQL, PostgreSQL, MongoDB (basics), Redis (basics)} \\
+      \textbf{Frontend}{: HTML, CSS, Tailwind CSS, React (basics)} \\
+      \textbf{AI / ML} \textit{(learning)}{: Python, NumPy, Pandas, Scikit-learn, TensorFlow} \\
+      \textbf{Tools \& Cloud}{: Git, GitHub, Maven, IntelliJ IDEA, Postman, Apache POI, Google Cloud (basics), Docker (exploring)} \\
+      \textbf{Concepts}{: OOP, System Design (learning), Backend Architecture, Debugging, Unit Testing}
+    }}
+\end{itemize}
+
+% ----------------------- PROJECTS -----------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{Suraag — Offline-First Music Streaming} $\,|\,$ \emph{Kotlin, Spring Boot, JWT, AES, ExoPlayer, MySQL} $\,|\,$ \href{https://suraagmusic.in}{\underline{suraagmusic.in}}}{2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Built a secure, offline-first music streaming app with \textbf{JWT authentication} and \textbf{AES (with IV) encrypted audio delivery} between an Android client and Spring Boot backend.}
+      \resumeItem{Engineered seamless playback with ExoPlayer that automatically falls back to cached audio when connectivity drops, eliminating playback interruptions.}
+      \resumeItem{Designed REST APIs for streaming, content handling, and metadata; migrating to scalable cloud storage with optimized caching.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{CBCT Allocation System} $\,|\,$ \emph{Java, Spring Boot, Spring Data JPA, MySQL, Apache POI} $\,|\,$ \href{https://github.com/Guru1817}{\underline{GitHub}}}{Aug 2025}
+    \resumeItemListStart
+      \resumeItem{Built a \textbf{first-come, first-served seat allocation engine} that ingests student preferences from Google Forms / Excel and produces deterministic results.}
+      \resumeItem{Implemented persistence with Spring Data JPA over MySQL, automated Excel export of results, and exposed REST APIs for admin tool integration.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Personal Portfolio} $\,|\,$ \emph{React, Vite, Tailwind CSS, Three.js, Framer Motion, GSAP} $\,|\,$ \href{https://gurupadanayak.in}{\underline{gurupadanayak.in}}}{2026}
+    \resumeItemListStart
+      \resumeItem{Designed and shipped a production-grade portfolio with a custom \textbf{WebGL fluid shader background}, magnetic cursor interactions, and scroll-driven animations.}
+      \resumeItem{Implemented full SEO setup (JSON-LD schema, sitemap, OpenGraph, Search Console) and deployed on Vercel with custom domain and SSL.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% ----------------------- CERTIFICATIONS -----------------------
+\section{Certifications}
+\resumeBulletListStart
+    \item \small{\textbf{Machine Learning with AI} — National Skill Development Corporation (Oct 2025)}
+    \item \small{\textbf{Fundamentals of Object-Oriented Programming} — NPTEL (May 2025)}
+    \item \small{\textbf{Java with DSA and System Design 2.0} — PW Skills (2024)}
+    \item \small{\textbf{100\% Job Ready Java Full Stack Live Course} — Code for Success (2024)}
+\resumeBulletListEnd
+
+% ----------------------- ACHIEVEMENTS -----------------------
+\section{Achievements}
+\resumeBulletListStart
+    \item \small{Ranked among the \textbf{top 10\% of MCA batch} at Berhampur University (CGPA 8.6).}
+    \item \small{Published and maintained multiple production Java projects on GitHub with clean code and clear documentation.}
+    \item \small{Completed \textbf{NCC B \& C Certificates} — demonstrating leadership, discipline, and teamwork.}
+    \item \small{Led team in dissertation project, demonstrating cross-functional collaboration.}
+\resumeBulletListEnd
+
+\end{document}
