@@ -1,19 +1,37 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 /**
  * Custom blob cursor that lags behind the mouse, morphs based on hover context.
- * Hides on touch devices.
+ * Hides on touch / coarse-pointer devices (phones, tablets).
  */
+
+// Detects "this device's primary input is touch / coarse pointer".
+// Using both checks because some devices report differently.
+function detectTouch() {
+  if (typeof window === 'undefined') return false;
+  const noHover = window.matchMedia('(hover: none)').matches;
+  const coarsePointer = window.matchMedia('(pointer: coarse)').matches;
+  return noHover || coarsePointer;
+}
+
 export default function Cursor() {
   const [pos, setPos] = useState({ x: -100, y: -100 });
   const [variant, setVariant] = useState('default');
   const [visible, setVisible] = useState(false);
-  const isTouch = useRef(false);
+  // Use state (not ref) so the component re-renders when we detect touch and
+  // the cursor disappears immediately.
+  const [isTouch, setIsTouch] = useState(() => detectTouch());
 
   useEffect(() => {
-    isTouch.current = window.matchMedia('(hover: none)').matches;
-    if (isTouch.current) return;
+    if (isTouch) return;
+
+    // Re-check on viewport changes (rotation, devtools resize, plug-in mouse, etc.)
+    const hoverMq = window.matchMedia('(hover: none)');
+    const pointerMq = window.matchMedia('(pointer: coarse)');
+    const onChange = () => setIsTouch(detectTouch());
+    hoverMq.addEventListener('change', onChange);
+    pointerMq.addEventListener('change', onChange);
 
     const move = (e) => {
       setPos({ x: e.clientX, y: e.clientY });
@@ -24,7 +42,7 @@ export default function Cursor() {
     window.addEventListener('mousemove', move);
     window.addEventListener('mouseleave', leave);
 
-    // Hover detection
+    // Hover state detection for cursor variants
     const updateVariant = (e) => {
       const target = e.target;
       if (!target?.closest) return;
@@ -39,13 +57,16 @@ export default function Cursor() {
     window.addEventListener('mouseover', updateVariant);
 
     return () => {
+      hoverMq.removeEventListener('change', onChange);
+      pointerMq.removeEventListener('change', onChange);
       window.removeEventListener('mousemove', move);
       window.removeEventListener('mouseleave', leave);
       window.removeEventListener('mouseover', updateVariant);
     };
-  }, []);
+  }, [isTouch]);
 
-  if (isTouch.current) return null;
+  // Touch / coarse-pointer devices: render nothing.
+  if (isTouch) return null;
 
   const variants = {
     default: { width: 18, height: 18, opacity: visible ? 1 : 0 },

@@ -25,7 +25,8 @@ body {
   cursor: none;
 }
 
-@media (max-width: 768px) {
+/* Restore native cursor on touch / coarse-pointer devices (phones, tablets). */
+@media (hover: none), (pointer: coarse) {
   body {
     cursor: auto;
   }
