@@ -12,7 +12,7 @@ export const projects = [
       'REST APIs for streaming, content handling, and metadata',
       'Marketing site shipped with full SEO + structured data',
     ],
-    stack: ['Kotlin', 'Spring Boot', 'JWT', 'AES', 'ExoPlayer', 'REST'],
+    stack: ['Kotlin', 'Spring Boot', 'JWT', 'AES', 'ExoPlayer', 'PostgreSQL'],
     role: 'Solo · Backend + Android + Web',
     status: 'Live · Android',
     year: '2025',
