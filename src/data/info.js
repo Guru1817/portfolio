@@ -22,7 +22,7 @@ export const info = {
     { label: 'Years coding', value: 2, suffix: '+' },
   ],
   now: [
-    'Building Suraag — encrypted, offline-first music streaming on suraagmusic.in',
+    'Shipped Suraag — encrypted, offline-first music streaming live at suraagmusic.in',
     'Deepening Spring Boot, microservices, and system design fundamentals',
     'Exploring AI/ML integration into backend services with Python',
   ],
