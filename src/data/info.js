@@ -16,14 +16,14 @@ export const info = {
     email: 'mailto:gurupadanayak@hotmail.com',
   },
   stats: [
-    { label: 'Projects shipped', value: 3, suffix: '+' },
-    { label: 'CGPA', value: 8.6, suffix: '/10' },
-    { label: 'Certifications', value: 3, suffix: '' },
+    { label: 'Projects shipped', value: 4, suffix: '+' },
+    { label: 'CGPA', value: 8.8, suffix: '/10' },
+    { label: 'Certifications', value: 3, suffix: '+' },
     { label: 'Years coding', value: 2, suffix: '+' },
   ],
   now: [
+    'Shipped Vidyapeeth — multi-tenant mock-test SaaS live at vidyapeeth.in',
     'Shipped Suraag — encrypted, offline-first music streaming live at suraagmusic.in',
     'Deepening Spring Boot, microservices, and system design fundamentals',
-    'Exploring AI/ML integration into backend services with Python',
   ],
 };

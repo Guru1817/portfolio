@@ -27,7 +27,7 @@ export default function SEOContent() {
       <p>
         Gurupada Nayak is a Java Developer currently pursuing Master of
         Computer Applications (MCA) at Berhampur University, Odisha, India,
-        with a CGPA of 8.6 and ranked among the top 10% of his batch.
+        with a CGPA of 8.8 and ranked among the top 10% of his batch.
       </p>
       <p>
         He specializes in backend development with Java, Spring Boot, Spring
@@ -37,6 +37,12 @@ export default function SEOContent() {
       </p>
       <h3>Projects by Gurupada Nayak</h3>
       <ul>
+        <li>
+          <strong>Vidyapeeth</strong> — A multi-tenant SaaS exam platform that
+          gives every coaching institute its own branded portal for auto-graded
+          mock tests. Built with Java 17, Spring Boot 3, Spring Security (JWT),
+          Hibernate, Flyway, React, and PostgreSQL. Live at vidyapeeth.in.
+        </li>
         <li>
           <strong>Suraag</strong> — A secure, offline-first music streaming
           platform built with Kotlin, Spring Boot, JWT authentication, and AES

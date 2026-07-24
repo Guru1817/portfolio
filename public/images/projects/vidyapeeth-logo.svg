@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="vlbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c2620"/>
+      <stop offset="100%" stop-color="#0a0617"/>
+    </linearGradient>
+    <linearGradient id="vlemerald" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="vlviolet" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#vlbg)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Graduation cap / academy mark -->
+  <path d="M100 52 L156 82 L100 112 L44 82 Z" fill="url(#vlemerald)"/>
+  <path d="M100 52 L156 82 L100 112 L44 82 Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+  <!-- cap band / body -->
+  <path d="M70 96 L70 128 Q100 148 130 128 L130 96 L100 112 Z" fill="url(#vlviolet)"/>
+  <!-- tassel -->
+  <line x1="156" y1="82" x2="156" y2="120" stroke="#10b981" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="156" cy="126" r="7" fill="#8b5cf6"/>
+  <!-- check mark accent -->
+  <path d="M86 88 L96 98 L116 78" fill="none" stroke="#f7f7ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

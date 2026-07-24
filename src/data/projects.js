@@ -1,5 +1,32 @@
 export const projects = [
   {
+    id: 'vidyapeeth',
+    title: 'Vidyapeeth',
+    subtitle: 'Shopify for coaching institutes',
+    description:
+      'A multi-tenant SaaS exam platform where a single codebase and database serve unlimited coaching institutes — each with its own branded portal for auto-graded mock tests, and every institute\'s data fully isolated by design. Live in production and running end-to-end on free-tier infrastructure.',
+    highlights: [
+      'Two-layer tenant isolation (Hibernate @Filter + tenant-aware repository)',
+      'Per-institute branding — portals theme themselves from the subdomain before login',
+      'Four question types graded through one canonical answer engine',
+      'Reusable question bank referenced across many tests, edited in one place',
+      'Timed, sectioned exams with instant grading and per-batch leaderboards',
+      'Property-based testing — 12 correctness properties (jqwik + fast-check)',
+    ],
+    stack: ['Java 17', 'Spring Boot 3', 'Spring Security', 'Hibernate', 'Flyway', 'React', 'PostgreSQL', 'Supabase'],
+    role: 'Solo · Full-stack SaaS',
+    status: 'Live · Production',
+    year: '2026',
+    liveUrl: 'https://vidyapeeth.in/?ref=portfolio',
+    liveLabel: 'vidyapeeth.in',
+    githubUrl: null,
+    image: '/images/projects/vidyapeeth.svg',
+    logo: '/images/projects/vidyapeeth-logo.svg',
+    accent: '#10b981',
+    accentTo: '#8b5cf6',
+    badge: 'Live · Multi-Tenant SaaS',
+  },
+  {
     id: 'suraag',
     title: 'Suraag',
     subtitle: 'Music that never loses you',
