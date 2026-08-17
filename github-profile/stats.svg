@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200" fill="none" role="img" aria-label="GitHub stats">
+  <defs>
+    <linearGradient id="sCard" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0b1f"/><stop offset="1" stop-color="#0d0612"/>
+    </linearGradient>
+    <linearGradient id="sAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5fbf"/><stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <style>
+      .m{font-family:'JetBrains Mono',ui-monospace,Consolas,monospace}
+      .row{opacity:0;animation:sl .6s ease-out forwards}
+      @keyframes sl{from{opacity:0;transform:translateX(-16px)}to{opacity:1;transform:translateX(0)}}
+    </style>
+  </defs>
+  <rect width="480" height="200" rx="16" fill="url(#sCard)" stroke="#7c5cff" stroke-opacity="0.3"/>
+  <text class="m" x="24" y="38" font-size="16" fill="#ff8fd8" font-weight="700">Gurupada's GitHub Stats</text>
+  <line x1="24" y1="50" x2="300" y2="50" stroke="#ff5fbf" stroke-opacity="0.3"/>
+
+  <!-- stat rows -->
+  <g class="m" font-size="14" fill="#e9d6ff">
+    <g class="row" style="animation-delay:.2s"><text x="24" y="82">⭐ Total Stars Earned</text><text x="300" y="82" fill="#ff8fd8" font-weight="700">1</text></g>
+    <g class="row" style="animation-delay:.35s"><text x="24" y="110">📦 Public Repositories</text><text x="300" y="110" fill="#ff8fd8" font-weight="700">12</text></g>
+    <g class="row" style="animation-delay:.5s"><text x="24" y="138">🔥 Contributions (1y)</text><text x="300" y="138" fill="#ff8fd8" font-weight="700">63</text></g>
+    <g class="row" style="animation-delay:.65s"><text x="24" y="166">💡 Focus</text><text x="300" y="166" fill="#ff8fd8" font-weight="700">Backend</text></g>
+  </g>
+
+  <!-- rank ring -->
+  <g transform="translate(390 100)">
+    <circle r="52" fill="none" stroke="#ffffff" stroke-opacity="0.08" stroke-width="9"/>
+    <circle r="52" fill="none" stroke="url(#sAccent)" stroke-width="9" stroke-linecap="round"
+            stroke-dasharray="327" stroke-dashoffset="327" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" values="327;66" dur="1.6s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.2 0.8 0.2 1"/>
+    </circle>
+    <text class="m" x="0" y="-2" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" opacity="0">A+
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.4s" fill="freeze"/>
+    </text>
+    <text class="m" x="0" y="18" font-size="10" fill="#b79bff" text-anchor="middle">RANK</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="900" height="160" fill="none" role="img" aria-label="Achievements">
+  <defs>
+    <linearGradient id="tCell" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0b1f"/><stop offset="1" stop-color="#0d0612"/>
+    </linearGradient>
+    <linearGradient id="shineT" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="stripClip"><rect x="0" y="0" width="900" height="160" rx="14"/></clipPath>
+    <style>
+      .m{font-family:'JetBrains Mono',ui-monospace,Consolas,monospace}
+      /* animation is on the INNER g only, positioning stays on the OUTER g */
+      .cell{opacity:0;animation:pop .5s ease-out forwards;transform-box:fill-box;transform-origin:center}
+      @keyframes pop{0%{opacity:0;transform:scale(.6)}70%{opacity:1;transform:scale(1.06)}100%{opacity:1;transform:scale(1)}}
+    </style>
+  </defs>
+  <g clip-path="url(#stripClip)">
+    <!-- 6 achievement cells, evenly spaced & centred (start x=7, pitch=150, cellW=136 → last ends at 893, right margin 7) -->
+
+    <g transform="translate(7 20)">
+      <g class="cell" style="animation-delay:.10s">
+        <rect width="136" height="120" rx="12" fill="url(#tCell)" stroke="#ff5fbf" stroke-opacity="0.45"/>
+        <text x="68" y="48" font-size="30" text-anchor="middle">🚀</text>
+        <text class="m" x="68" y="78" font-size="12" fill="#ff8fd8" text-anchor="middle" font-weight="700">Projects</text>
+        <text class="m" x="68" y="100" font-size="12" fill="#e9d6ff" text-anchor="middle">4+ Shipped</text>
+      </g>
+    </g>
+
+    <g transform="translate(157 20)">
+      <g class="cell" style="animation-delay:.22s">
+        <rect width="136" height="120" rx="12" fill="url(#tCell)" stroke="#c86bff" stroke-opacity="0.45"/>
+        <text x="68" y="48" font-size="30" text-anchor="middle">🎓</text>
+        <text class="m" x="68" y="78" font-size="12" fill="#c86bff" text-anchor="middle" font-weight="700">MCA · CGPA</text>
+        <text class="m" x="68" y="100" font-size="12" fill="#e9d6ff" text-anchor="middle">8.8 / 10</text>
+      </g>
+    </g>
+
+    <g transform="translate(307 20)">
+      <g class="cell" style="animation-delay:.34s">
+        <rect width="136" height="120" rx="12" fill="url(#tCell)" stroke="#ffd76f" stroke-opacity="0.5"/>
+        <text x="68" y="48" font-size="30" text-anchor="middle">🥇</text>
+        <text class="m" x="68" y="78" font-size="12" fill="#ffd76f" text-anchor="middle" font-weight="700">Batch Rank</text>
+        <text class="m" x="68" y="100" font-size="12" fill="#e9d6ff" text-anchor="middle">Top 10%</text>
+      </g>
+    </g>
+
+    <g transform="translate(457 20)">
+      <g class="cell" style="animation-delay:.46s">
+        <rect width="136" height="120" rx="12" fill="url(#tCell)" stroke="#7c5cff" stroke-opacity="0.45"/>
+        <text x="68" y="48" font-size="30" text-anchor="middle">🔐</text>
+        <text class="m" x="68" y="78" font-size="12" fill="#a99bff" text-anchor="middle" font-weight="700">Security</text>
+        <text class="m" x="68" y="100" font-size="12" fill="#e9d6ff" text-anchor="middle">JWT · AES</text>
+      </g>
+    </g>
+
+    <g transform="translate(607 20)">
+      <g class="cell" style="animation-delay:.58s">
+        <rect width="136" height="120" rx="12" fill="url(#tCell)" stroke="#ff5fbf" stroke-opacity="0.45"/>
+        <text x="68" y="48" font-size="30" text-anchor="middle">🎖️</text>
+        <text class="m" x="68" y="78" font-size="12" fill="#ff8fd8" text-anchor="middle" font-weight="700">NCC Cadet</text>
+        <text class="m" x="68" y="100" font-size="12" fill="#e9d6ff" text-anchor="middle">B &amp; C Certs</text>
+      </g>
+    </g>
+
+    <g transform="translate(757 20)">
+      <g class="cell" style="animation-delay:.70s">
+        <rect width="136" height="120" rx="12" fill="url(#tCell)" stroke="#c86bff" stroke-opacity="0.45"/>
+        <text x="68" y="48" font-size="30" text-anchor="middle">📜</text>
+        <text class="m" x="68" y="78" font-size="12" fill="#c86bff" text-anchor="middle" font-weight="700">Certified</text>
+        <text class="m" x="68" y="100" font-size="12" fill="#e9d6ff" text-anchor="middle">4 Courses</text>
+      </g>
+    </g>
+
+    <!-- shine sweep across the whole strip -->
+    <rect x="-300" y="0" width="160" height="160" fill="url(#shineT)" transform="skewX(-20)">
+      <animate attributeName="x" values="-300;1000" dur="3.5s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Profile README — Preview</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#0b0610; color:#e9d6ff; font-family:'Segoe UI',system-ui,sans-serif; }
+  .bar { display:flex; gap:10px; align-items:center; padding:12px 20px; position:sticky; top:0; background:#150b1e; border-bottom:1px solid #7c5cff44; z-index:10; }
+  .bar b { color:#ff8fd8; }
+  button { background:#241738; color:#e9d6ff; border:1px solid #7c5cff66; border-radius:8px; padding:6px 12px; cursor:pointer; }
+  button:hover { border-color:#ff5fbf; }
+  .wrap { max-width:1000px; margin:0 auto; padding:24px; }
+  .light { background:#ffffff !important; }
+  .light .card { color:#3a2352; }
+  .row { display:flex; gap:16px; flex-wrap:wrap; align-items:flex-start; }
+  img { max-width:100%; display:block; border-radius:14px; }
+  h3 { color:#ff8fd8; margin:28px 0 10px; }
+  .lanyard { width:230px; }
+</style>
+</head>
+<body id="page">
+  <div class="bar">
+    <b>Local preview</b>
+    <button onclick="location.reload()">↻ Replay animations</button>
+    <button onclick="document.getElementById('page').classList.toggle('light')">◐ Toggle light/dark</button>
+    <span style="opacity:.6">reload to restart timed reveals</span>
+  </div>
+  <div class="wrap">
+    <h3>Banner (dark)</h3>
+    <img src="./banner.svg" alt="banner dark"/>
+    <h3>Banner (light)</h3>
+    <div style="background:#fff;padding:16px;border-radius:16px"><img src="./banner-light.svg" alt="banner light"/></div>
+    <h3>Lanyard badge</h3>
+    <img class="lanyard" src="./lanyard.svg" alt="lanyard"/>
+    <h3>Stat cards</h3>
+    <div class="row">
+      <img src="./stats.svg" style="width:48%" alt="stats"/>
+      <img src="./langs.svg" style="width:48%" alt="langs"/>
+    </div>
+    <h3>Trophies</h3>
+    <img src="./trophies.svg" alt="trophies"/>
+  </div>
+</body>
+</html>
